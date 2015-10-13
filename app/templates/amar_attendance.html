@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block head %}
+  {{ super() }}
+
+{% endblock %}
+
+{% block tilte %}Check Your Attendance{% endblock %}
+
+{% block navbar %}
+{{ super() }}
+{% endblock %}
+
+{% block page_content %}
+    <div class="container">
+      <div class="row loc">
+              <iframe src="http://bpit.markattendance.in/" height="600px" width="100%"></iframe>
+      </div>    
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-offset-0 col-sm-0">
+         <h3 id="attsize2">Default username and password
+         is your enrollment number.</h3>
+        </div>
+      </div>
+    </div>
+ 
+{% endblock %}
+
+
+    

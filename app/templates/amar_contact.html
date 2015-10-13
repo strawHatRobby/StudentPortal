@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+    {% block head %}
+      {{ super() }}
+
+    
+    
+ <script type="text/javascript">
+    function toggle_div_fun(id) {
+
+       var divelement = document.getElementById(id);
+
+       if(divelement.style.display == 'none')
+          divelement.style.display = 'block';
+       else
+          divelement.style.display = 'none';
+    }
+</script>
+    {% endblock %}
+  
+{% block title %}Contact BPIT{% endblock %}
+    
+
+  {% block page_content %}
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-0 col-md-12 col-md-offset-5 para">
+        <section>
+        <div class="jumbotron">
+          <div class="container">
+            
+                   <section>
+          <h2>Contact Us</h2>
+     
+         <td height="10" colspan="4" align="left" valign="top" class="text-3"><span class="style1">BHAGWAN PARSHURAM INSTITUTE OF TECHNOLOGY<br />
+                            PSP- 4, Dr. K.N. Katju Marg , Sector 17 Rohini, <br />
+                            New Delhi -110089<br />
+                            Tel: 011 - 27572900 , 27571080 <br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;011 - 27574635 , 27574637 (10 lines)<br /> 
+                            Fax: 011-27574642 <br />
+                            Email: bpitindia@yahoo.com<br />
+                Website: http://www.bpitindia.com <br />
+                 <br><br>
+      <br><br>
+                          
+                  
+
+        </section>
+
+        <div style="position:relative;">
+          <h2>
+            How to reach
+          </h2>
+          <div id="attsize3">
+            </span></td>
+                          <td width="15"></td>
+                          <td width="660" align="left" valign="top"><iframe width="660" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=PSP-+4,+Dr.+K.N.+Katju+Marg+,+Sector+17+Rohini&amp;aq=&amp;sll=21.125498,81.914063&amp;sspn=41.346779,86.044922&amp;ie=UTF8&amp;hq=PSP-+4,+Dr.+K.N.+Katju+Marg+,+Sector+17+Rohini&amp;hnear=&amp;t=m&amp;ll=28.737449,77.112099&amp;spn=0.004835,0.010504&amp;z=14&amp;iwloc=A&amp;cid=1532668444552346975&amp;output=embed"></iframe><br /><small><a href="http://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=PSP-+4,+Dr.+K.N.+Katju+Marg+,+Sector+17+Rohini&amp;aq=&amp;sll=21.125498,81.914063&amp;sspn=41.346779,86.044922&amp;ie=UTF8&amp;hq=PSP-+4,+Dr.+K.N.+Katju+Marg+,+Sector+17+Rohini&amp;hnear=&amp;t=m&amp;ll=28.737449,77.112099&amp;spn=0.004835,0.010504&amp;z=14&amp;iwloc=A&amp;cid=1532668444552346975" style="color:#FFFFFF;text-align:left">View Larger Map</a></small></td>
+                        </tr>
+          </div>
+           <br>
+           <p>
+              
+              <button class="btn btn-primary btn-lg" onclick="toggle_div_fun('content');">Learn more</button>
+          
+          
+          <p id="content" style="display:none" >
+            The institute is situated at a prime location on Dr. K.N. Katju Marg, which separates Sector 11 and Sector 17 in Rohini, North Delhi. Adjacent to BPIT is the MCD Building, which houses Railway Reservation Centre. It is well connected with public transport system like DTC buses and metro shuttles. Rithala metro station on metro line 1 at distances of 1.5 and the Jahangirpuri metro station near Mukarba chowk (crossing of GT road to Karnal and outer ring road) on metro line 2 are at 4 km, respectively.
+          </p>
+          <!-- <p>Contents ...</p> -->
+          
+            </p>
+          </div>
+        </div>
+        </div>
+
+        </section>
+      <br><br>
+      <br><br>
+        
+      </div>
+    </div>
+
+
+{% endblock %}
+
+{% block scripts %}
+
+{{ super() }}
+
+{% endblock %}
