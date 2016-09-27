@@ -18,10 +18,10 @@ class RegistrationForm(Form):
                                            Email()])
     username = StringField('Full Name', validators=[
         Required(), Length(1, 64), Regexp('^[A-Za-z]*[\s][A-Za-z]*$', 0,
-                                          'Name must have only letters and spaces'
+                                          'Name must have only letters, Please write your full name with a space between your first and last name'
                                           )])
     password = PasswordField('Password', validators=[
-        Required(), EqualTo('password2', message='Passwords must match.')])
+        Required(), Length(6,64,message='Passwords must be 6 characters or longer'),EqualTo('password2', message='Passwords must match.')])
     password2 = PasswordField('Confirm password', validators=[Required()])
     submit = SubmitField('Register')
 
